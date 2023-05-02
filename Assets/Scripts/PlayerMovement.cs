@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
   public float limitRight = 2.5f;
 
   public PlayerInputs inputs;
-  public GeneratorBullet generator;
+
   void Update()
   {
     if (inputs.movLeft && transform.position.x > limitLeft)
@@ -20,10 +20,5 @@ public class PlayerMovement : MonoBehaviour
     {
       transform.Translate(Vector3.right * speedForce * Time.deltaTime);
     }
-    if (inputs.shootBullet)
-    {
-      generator.Spawn();
-    }
-
   }
 }

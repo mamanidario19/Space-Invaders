@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-  public GameObject bullet;
   public PlayerInputs inputs;
+  public GeneratorBullet generator;
   void Update()
   {
     if (inputs.shootBullet)
     {
-      GameObject newBullet = GameObject.Instantiate(bullet);
-      newBullet.transform.position = transform.position;
+      generator.Spawn();
     }
   }
 }
