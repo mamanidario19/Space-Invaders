@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-  // Start is called before the first frame update
-  void Start()
-  {
-
-  }
-
-  // Update is called once per frame
+  public Vector2 position;
   void Update()
   {
-
 
   }
 }
