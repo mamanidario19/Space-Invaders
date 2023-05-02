@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+  public GameObject bullet;
+  public PlayerInputs inputs;
+  void Update()
+  {
+    if (inputs.shootBullet)
     {
-        
+      GameObject newBullet = GameObject.Instantiate(bullet);
+      newBullet.transform.position = transform.position;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  }
 }

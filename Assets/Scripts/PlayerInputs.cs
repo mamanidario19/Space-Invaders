@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInputs : MonoBehaviour
 {
-  public bool movLeft, movRight;
+  public bool movLeft, movRight, shootBullet;
   public Rigidbody2D rb;
 
   public void ButtonPressRight()
@@ -23,5 +23,12 @@ public class PlayerInputs : MonoBehaviour
   {
     movLeft = false;
   }
-
+  public void ButtonShooting()
+  {
+    shootBullet = true;
+  }
+  public void ButtonReleaseShooting()
+  {
+    shootBullet = false;
+  }
 }
