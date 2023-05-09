@@ -6,6 +6,8 @@ public class GeneratorBullet : MonoBehaviour
 {
 
   [SerializeField] private GameObject prefab;
+
+
   public void Spawn()
   {
     GameObject newObj = GameObject.Instantiate(prefab);

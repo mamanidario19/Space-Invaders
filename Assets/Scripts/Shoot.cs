@@ -6,11 +6,23 @@ public class Shoot : MonoBehaviour
 {
   public PlayerInputs inputs;
   public GeneratorBullet generator;
+
+  private float cooldown = 0.20f;
+  private float nextShoot;
+
   void Update()
   {
-    if (inputs.shootBullet)
+    if (inputs.shootBullet && Time.time >= nextShoot)
     {
-      generator.Spawn();
+      SpawnShoot();
+      nextShoot = Time.time + cooldown;
     }
   }
+  void SpawnShoot()
+  {
+
+    generator.Spawn();
+
+  }
+
 }
