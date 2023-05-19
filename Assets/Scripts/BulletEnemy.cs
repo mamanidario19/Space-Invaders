@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletEnemy : MonoBehaviour
 {
-  //  Clase de proyectil.
+  //  Clase de proyectil enemigo.
   private float speed = 7f;
   //  Movimiento continuo del Obj.
   private int direction = -1;

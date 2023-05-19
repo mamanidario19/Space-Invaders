@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class ShootEnemy : MonoBehaviour
 {
+
   public GameObject enemy;
   public GameObject bulletEnemy;
   public GameObject bulletClone;
 
   private GameObject Aliens;
-
-  // Update is called once per frame
   void Update()
   {
     float random = Random.Range(0f, 600f);
