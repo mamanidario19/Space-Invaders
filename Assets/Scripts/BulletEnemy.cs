@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class BulletEnemy : MonoBehaviour
 {
   //  Clase de proyectil.
   private float speed = 7f;
   //  Movimiento continuo del Obj.
-  private int direction = 1;
+  private int direction = -1;
 
   private void Update()
   {
