@@ -7,7 +7,7 @@ public class GeneratorBullet : MonoBehaviour
 
   [SerializeField] private GameObject prefab;
 
-
+  //  Funcion generador de prefabs.
   public void Spawn()
   {
     GameObject newObj = GameObject.Instantiate(prefab);

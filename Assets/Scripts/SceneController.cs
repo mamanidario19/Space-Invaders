@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
+  // Script encargado del movimiento entre escenas.
   public int SceneIndex;
   public void ChangeScene(int index)
   {

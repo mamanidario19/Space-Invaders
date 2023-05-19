@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInputs : MonoBehaviour
 {
+  // Script que capta el eventTrigger de los botones en el canvas y modifica banderas.
   public bool movLeft, movRight, shootBullet;
   public Rigidbody2D rb;
 
@@ -31,4 +32,5 @@ public class PlayerInputs : MonoBehaviour
   {
     shootBullet = false;
   }
+
 }

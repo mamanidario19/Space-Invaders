@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+  // Script que recibe los Inputs y aplica el respectivo movimiento.
   public float speedForce = 4f;
   public float limitLeft = -2.5f;
   public float limitRight = 2.5f;
