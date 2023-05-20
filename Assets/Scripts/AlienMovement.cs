@@ -11,6 +11,11 @@ public class AlienMovement : MonoBehaviour
   int limitMov = 4;
   void Update()
   {
+    movAlien();
+  }
+
+  void movAlien()
+  {
     //vertical movement
     if (numOfMovs == limitMov)
     {
@@ -28,5 +33,4 @@ public class AlienMovement : MonoBehaviour
       numOfMovs++;
     }
   }
-
 }

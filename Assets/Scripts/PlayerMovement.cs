@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
 
   void Update()
   {
+    PlayerMov();
+  }
+  void PlayerMov()
+  {
     if (inputs.movLeft && transform.position.x > limitLeft)
     {
       transform.Translate(Vector3.left * speedForce * Time.deltaTime);
